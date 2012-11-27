@@ -4,11 +4,10 @@ A Leiningen template to generate a boilerplate Kinematic app.
 
 ## Usage
 
-  hello there
-    $ lein new kinematic-app myapp
-    $ cd myapp
-    $ lein jar
-    $ bash run-server.sh
+* lein new kinematic-app myapp
+* cd myapp
+* lein jar
+* bash run-server.sh
 
 Navigate to localhost:8080/myapp/api/hello where a sample api route is located.
 
