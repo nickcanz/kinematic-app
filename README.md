@@ -4,6 +4,7 @@ A Leiningen template to generate a boilerplate Kinematic app.
 
 ## Usage
 
+  hello there
     $ lein new kinematic-app myapp
     $ cd myapp
     $ lein jar
