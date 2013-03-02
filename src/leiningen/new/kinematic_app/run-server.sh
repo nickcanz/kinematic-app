@@ -1,4 +1,19 @@
-SVC_JAR=./{{name}}-1.0.0-SNAPSHOT.jar
+LEIN1_JAR=./{{name}}-1.0.0-SNAPSHOT.jar
+LEIN2_JAR=./target/{{name}}-1.0.0-SNAPSHOT.jar
+
+if [ -e $LEIN1_JAR ]; then
+  SVC_JAR=$LEIN1_JAR
+fi
+
+if [ -e $LEIN2_JAR ]; then
+  SVC_JAR=$LEIN2_JAR
+fi
+
+if [ -z $SVC_JAR ]; then
+  echo "Couldn't find project jar file!";
+  exit 1;
+fi
+
 CLASSPATH_FILE=./.classpath
 
 rm -f $CLASSPATH_FILE
