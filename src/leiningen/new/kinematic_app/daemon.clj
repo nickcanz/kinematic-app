@@ -23,7 +23,8 @@
    :host (:host swank-config)
    :port (:port swank-config))
   (restart-jetty)
-  :main-service-started)
+  (println "Kinematic started!")
+  (println "Point your browser at http://localhost:8080/{{name}}/api/hello/world"))
 
 (defn -main [& args]
   (try
